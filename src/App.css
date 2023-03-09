@@ -1,0 +1,22 @@
+.App{
+    font-family: "Poppins", sans-serif;
+}
+.upper_navbar{
+    background-color: #192f59;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fa-envelope {
+    margin-right: 5px;
+    font-size: 17px;
+}
+.icon_link {
+    font-size: 17px;
+}
+
+
+
+@media only screen and (max-width: 880px) {
+    
+}
