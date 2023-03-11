@@ -10,7 +10,10 @@
 .App{
     font-family: "Poppins", sans-serif;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+.dropdown-toggle{
+    color: #192f59 !important;
 }
 .upper_navbar{
     background-color: #192f59;
@@ -20,6 +23,10 @@
 }
 .main_navbar{
     background-color: #f8f9fa;
+}
+.nav_logo{
+    width: 100px;
+    height: 60px;
 }
 .navLink:hover{
     color: #ea9970;

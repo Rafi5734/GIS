@@ -148,7 +148,7 @@ function App() {
                         marginLeft: "10px",
                       }}
                     >
-                      <i class="fa-brands fa-youtube"></i>
+                      <i className="fa-brands fa-youtube"></i>
                     </a>
                     <a
                       href="mailto: info@guidence.edu.bd"
@@ -159,7 +159,7 @@ function App() {
                         marginLeft: "10px",
                       }}
                     >
-                      <i class="fa-brands fa-square-instagram"></i>
+                      <i className="fa-brands fa-square-instagram"></i>
                     </a>
                   </div>
                 </Col>
@@ -175,70 +175,138 @@ function App() {
             <Container>
               <Navbar.Brand
                 href="#home"
-                className="primary_bg_color fw-bold fs-6"
+                className="me-5 primary_bg_color fw-bold fs-6"
               >
-                WHY GIS
+                <img
+                  src="https://www.guidance.edu.bd/wp-content/uploads/2020/12/logo-3-300x181-1.png"
+                  className="nav_logo"
+                  alt="logo"
+                />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
-                  <Nav.Link
-                    href="#"
-                    className="primary_bg_color navLink fw-normal"
+              <Navbar.Collapse id="basic-navbar-nav" className="">
+                <Nav className="">
+                  <NavDropdown
+                    className="me-3 navLink fw-normal"
+                    title="About"
+                    id="basic-nav-dropdown"
                   >
-                    Home
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#link"
-                    className="primary_bg_color navLink fw-normal"
-                  >
-                    Link
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#link"
-                    className="primary_bg_color navLink fw-normal"
-                  >
-                    Link
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#link"
-                    className="primary_bg_color navLink fw-normal"
-                  >
-                    Link
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#link"
-                    className="primary_bg_color navLink fw-normal"
-                  >
-                    Link
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#link"
-                    className="primary_bg_color navLink fw-normal"
-                  >
-                    Link
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#link"
-                    className="primary_bg_color navLink fw-normal"
-                  >
-                    Link
-                  </Nav.Link>
-                  <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
-                      Action
+                      About GIS
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">
-                      Another action
+                      Message from the principal
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.3">
-                      Something
+                      Governing body
                     </NavDropdown.Item>
-                    <NavDropdown.Divider />
+                    <NavDropdown
+                      className="me-3 dropend fw-normal"
+                      title="Administrative Team"
+                      id="basic-nav-dropdown"
+                    >
+                      <NavDropdown.Item href="#action/3.1">
+                        Administrative
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.2">
+                        Support staff
+                      </NavDropdown.Item>
+                    </NavDropdown>
                     <NavDropdown.Item href="#action/3.4">
-                      Separated link
+                      Produces & Policies
+                    </NavDropdown.Item>
+                    <NavDropdown
+                      className="me-3 dropend fw-normal"
+                      title="School facilities"
+                      id="basic-nav-dropdown"
+                    >
+                      <NavDropdown.Item href="#action/3.1">
+                        Information Technology
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.2">
+                        E-library
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.3">
+                        Creative Arts
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.4">
+                        Co-curicular Activities
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.4">
+                        Sports
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.4">
+                        Outdoor
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.4">
+                        Exposure
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.4">
+                        Social Relationships
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.4">
+                        Communication Skills
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.4">
+                        Psychological Counselling
+                      </NavDropdown.Item>
+                    </NavDropdown>
+                  </NavDropdown>
+                  <Nav.Link
+                    href="#link"
+                    className="me-3 primary_bg_color navLink fw-normal"
+                  >
+                    Academics
+                  </Nav.Link>
+                  <NavDropdown
+                    className="me-3 navLink fw-normal"
+                    title="Admission"
+                    id="basic-nav-dropdown"
+                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      Why Choose Guidance
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      School Fees
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      How to apply
+                    </NavDropdown.Item>
+                    {/* <NavDropdown.Divider /> */}
+                    <NavDropdown.Item href="#action/3.4">
+                      Apply online
                     </NavDropdown.Item>
                   </NavDropdown>
+                  <Nav.Link
+                    href="#link"
+                    className="me-3 primary_bg_color navLink fw-normal"
+                  >
+                    Activities
+                  </Nav.Link>
+                  <Nav.Link
+                    href="#link"
+                    className="me-3 primary_bg_color navLink fw-normal"
+                  >
+                    Parents&Students
+                  </Nav.Link>
+                  <Nav.Link
+                    href="#link"
+                    className="me-3 text-nowrap primary_hovered_color navLink fw-bold"
+                  >
+                    Apply Online
+                  </Nav.Link>
+                  <Nav.Link
+                    href="#link"
+                    className="me-3 primary_bg_color navLink fw-normal"
+                  >
+                    Contact
+                  </Nav.Link>
+                  <Nav.Link
+                    href="#link"
+                    className="me-3 text-nowrap primary_bg_color navLink fw-normal"
+                  >
+                    Student Login
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
