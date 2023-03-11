@@ -1,11 +1,29 @@
+.primary_color {
+    color: #192f59;
+}
+.primary_bg_color {
+    color: #192f59;
+}
+.primary_hovered_color {
+    color: #ea9970;
+}
 .App{
     font-family: "Poppins", sans-serif;
+    width: 100%;
+    overflow: hidden;
 }
 .upper_navbar{
     background-color: #192f59;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.main_navbar{
+    background-color: #f8f9fa;
+}
+.navLink:hover{
+    color: #ea9970;
+    border-bottom: 1px solid #ea9970;
 }
 .fa-envelope {
     margin-right: 5px;

@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar, Container, Row, Col } from "react-bootstrap";
+import { Navbar, Container, Row, Col, Nav, NavDropdown } from "react-bootstrap";
 
 function App() {
   return (
@@ -14,7 +14,6 @@ function App() {
                   flexDirection: "row",
                   justifyContent: "center",
                   alignItems: "center",
-                  
                 }}
               >
                 <a
@@ -170,11 +169,95 @@ function App() {
         </Container>
       </div>
 
+      <div className="bg-light">
+        <Container className="main_navbar">
+          <Navbar bg="light" expand="lg">
+            <Container>
+              <Navbar.Brand
+                href="#home"
+                className="primary_bg_color fw-bold fs-6"
+              >
+                WHY GIS
+              </Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                  <Nav.Link
+                    href="#"
+                    className="primary_bg_color navLink fw-normal"
+                  >
+                    Home
+                  </Nav.Link>
+                  <Nav.Link
+                    href="#link"
+                    className="primary_bg_color navLink fw-normal"
+                  >
+                    Link
+                  </Nav.Link>
+                  <Nav.Link
+                    href="#link"
+                    className="primary_bg_color navLink fw-normal"
+                  >
+                    Link
+                  </Nav.Link>
+                  <Nav.Link
+                    href="#link"
+                    className="primary_bg_color navLink fw-normal"
+                  >
+                    Link
+                  </Nav.Link>
+                  <Nav.Link
+                    href="#link"
+                    className="primary_bg_color navLink fw-normal"
+                  >
+                    Link
+                  </Nav.Link>
+                  <Nav.Link
+                    href="#link"
+                    className="primary_bg_color navLink fw-normal"
+                  >
+                    Link
+                  </Nav.Link>
+                  <Nav.Link
+                    href="#link"
+                    className="primary_bg_color navLink fw-normal"
+                  >
+                    Link
+                  </Nav.Link>
+                  <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Something
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">
+                      Separated link
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+        </Container>
+      </div>
+
       <Container>
         <div>
           <h1>I am from footer.</h1>
         </div>
       </Container>
+      <div className="position-relative">
+        <div class="position-absolute bottom-0 end-0">
+          <button typeName="button" className="btn btn-primary">
+            Primary
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
