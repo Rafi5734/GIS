@@ -1,5 +1,15 @@
 import "./App.css";
 import { Navbar, Container, Row, Col, Nav, NavDropdown } from "react-bootstrap";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 function App() {
   return (
@@ -126,7 +136,7 @@ function App() {
                         marginLeft: "10px",
                       }}
                     >
-                      <i class="fa-brands fa-linkedin"></i>
+                      <i className="fa-brands fa-linkedin"></i>
                     </a>
                     <a
                       href="mailto: info@guidence.edu.bd"
@@ -277,22 +287,34 @@ function App() {
                       Apply online
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link
-                    href="#link"
-                    className="me-3 primary_bg_color navLink fw-normal"
+                  <NavDropdown
+                    className="me-3 navLink fw-normal"
+                    title="Activities"
+                    id="basic-nav-dropdown"
                   >
-                    Activities
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#link"
-                    className="me-3 primary_bg_color navLink fw-normal"
+                    <NavDropdown.Item href="#action/3.1">
+                      News & Updates
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Events
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  <NavDropdown
+                    className="me-3 navLink fw-normal"
+                    title="Parents&Students"
+                    id="basic-nav-dropdown"
                   >
-                    Parents&Students
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#link"
-                    className="me-3 text-nowrap primary_hovered_color navLink fw-bold"
-                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      Parents Handbook
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Code of Conduct
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Withdrawal Policies
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  <Nav.Link className="me-3 text-nowrap primary_hovered_color navLink fw-bold">
                     Apply Online
                   </Nav.Link>
                   <Nav.Link
@@ -301,10 +323,7 @@ function App() {
                   >
                     Contact
                   </Nav.Link>
-                  <Nav.Link
-                    href="#link"
-                    className="me-3 text-nowrap primary_bg_color navLink fw-normal"
-                  >
+                  <Nav.Link className="me-3 text-nowrap primary_color navLink fw-bold">
                     Student Login
                   </Nav.Link>
                 </Nav>
@@ -314,17 +333,53 @@ function App() {
         </Container>
       </div>
 
+      <div>
+        <div>
+          <>
+            <Swiper
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <img
+                  src="https://guidance.edu.bd/wp-content/uploads/2021/10/s2.jpg"
+                  alt="slide1"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </>
+        </div>
+      </div>
+
       <Container>
         <div>
           <h1>I am from footer.</h1>
         </div>
       </Container>
-      <div className="position-relative">
-        <div class="position-absolute bottom-0 end-0">
-          <button typeName="button" className="btn btn-primary">
+
+      <div className="">
+        {/* <div className="d-flex justify-content-end bottom-0 start-0">
+          <button typeName="button" className="support_btn  btn btn-primary">
             Primary
           </button>
-        </div>
+        </div> */}
+        <nav class="navbar fixed-bottom bg-body-tertiary">
+          <div class="container-fluid d-flex justify-content-end">
+            <button type="button" class="btn btn-primary">
+              Support
+            </button>
+          </div>
+        </nav>
       </div>
     </div>
   );
