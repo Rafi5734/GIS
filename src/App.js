@@ -2,6 +2,7 @@ import "./App.css";
 import { Navbar, Container, Row, Col, Nav, NavDropdown } from "react-bootstrap";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Carousel } from "react-bootstrap";
 
 // Import Swiper styles
 import "swiper/css";
@@ -352,8 +353,23 @@ function App() {
             >
               <SwiperSlide>
                 <img
-                  src="https://guidance.edu.bd/wp-content/uploads/2021/10/s2.jpg"
+                  src="https://img.freepik.com/free-vector/realistic-three-dimensional-arabic-ornamental-background_52683-59086.jpg?w=1380&t=st=1678766818~exp=1678767418~hmac=04e823baf2af045362e320d07f99bd1c7209f843b87d02b18faddd61f5be2f6e"
                   alt="slide1"
+                  className="w-100"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src="https://img.freepik.com/free-vector/mandala-illustration_53876-81805.jpg?w=1380&t=st=1678766896~exp=1678767496~hmac=af73ab6a6f7b187a568f5e9000e752725870fc5aa5814c239701ea9cf54f3f06"
+                  alt="slide1"
+                  className="w-100"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src="https://img.freepik.com/free-vector/realistic-three-dimensional-arabic-ornamental-background_52683-59650.jpg?w=1380&t=st=1678766922~exp=1678767522~hmac=808783f08067991cf1d4ac78051d1b1ba2dd90659e09d09ca5386b42c20ae219"
+                  alt="slide1"
+                  className="w-100"
                 />
               </SwiperSlide>
             </Swiper>
@@ -361,6 +377,214 @@ function App() {
         </div>
       </div>
 
+      <div>
+        <Container>
+          <div className="shadow-sm mt-3">
+            <Row>
+              <Col sm={12} md={3} lg={3}>
+                <div className="d-flex flex-row p-3 justify-content-between align-items-center">
+                  <img
+                    src="https://www.guidance.edu.bd/wp-content/uploads/2018/08/icon-1.png"
+                    alt="Islamic Icon"
+                  />
+                  <h3>Islamic Studies</h3>
+                </div>
+              </Col>
+              <Col sm={12} md={3} lg={3}>
+                <div className="d-flex flex-row p-3 justify-content-between align-items-center">
+                  <img
+                    src="https://www.guidance.edu.bd/wp-content/uploads/2018/08/icon-2.png"
+                    alt="Islamic Icon"
+                  />
+                  <h3>Hifzul Quran</h3>
+                </div>
+              </Col>
+              <Col sm={12} md={3} lg={3}>
+                <div className="d-flex flex-row p-3 justify-content-between align-items-center">
+                  <img
+                    src="https://www.guidance.edu.bd/wp-content/uploads/2018/08/icon-2.png"
+                    alt="Islamic Icon"
+                  />
+                  <h3>Tarbiyyah</h3>
+                </div>
+              </Col>
+              <Col sm={12} md={3} lg={3}>
+                <div className="d-flex flex-row p-3 justify-content-between align-items-center">
+                  <img
+                    src="https://www.guidance.edu.bd/wp-content/uploads/2018/08/icon-3.png"
+                    alt="Islamic Icon"
+                  />
+                  <h3>Extra Curricular</h3>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Container>
+      </div>
+
+      <Container className="mt-5">
+        <div>
+          <Row>
+            <Col sm={8} className="border-end">
+              <div className="d-flex flex-row justify-content-center align-items-center">
+                <h3 className="primary_color text-nowrap">News & Updates</h3>
+                <div
+                  className="w-100"
+                  style={{
+                    backgroundColor: "#ea9970",
+                    height: "5px",
+                    marginLeft: "20px",
+                  }}
+                ></div>
+              </div>
+              <p className="primary_hovered_color">Read all news & updates</p>
+
+              <div>
+                <Carousel fade>
+                  <Carousel.Item className="carousel_hover">
+                    <img
+                      className="d-block w-100"
+                      src="https://www.guidance.edu.bd/wp-content/uploads/2021/06/Belayet-Vai-1-800x356.jpg"
+                      alt="First slide"
+                    />
+                    <Carousel.Caption>
+                      <h3 className="primary_hovered_color">Admission Open</h3>
+                      <div className="d-flex flex-row justify-content-center align-items-center">
+                        <p
+                          className="primary_hovered_color"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingRight: "13px",
+                          }}
+                        >
+                          JUNE 28, 2021
+                        </p>
+                        <p
+                          className="primary_hovered_color"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingLeft: "13px",
+                            paddingRight: "13px",
+                          }}
+                        >
+                          BYGUIDANCE INTERNATIONAL SCHOOL
+                        </p>
+                        <p
+                          className="primary_hovered_color"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingRight: "13px",
+                            paddingLeft: "13px",
+                          }}
+                        >
+                          NEWS
+                        </p>
+                      </div>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="https://www.guidance.edu.bd/wp-content/uploads/2021/06/Fuad-Hassan-2-800x356.jpg"
+                      alt="Second slide"
+                    />
+
+                    <Carousel.Caption>
+                      <h3 className="primary_hovered_color">Admission Open</h3>
+                      <div className="d-flex flex-row justify-content-center align-items-center">
+                        <p
+                          className="primary_hovered_color"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingRight: "13px",
+                          }}
+                        >
+                          JUNE 28, 2021
+                        </p>
+                        <p
+                          className="primary_hovered_color"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingLeft: "13px",
+                            paddingRight: "13px",
+                          }}
+                        >
+                          BYGUIDANCE INTERNATIONAL SCHOOL
+                        </p>
+                        <p
+                          className="primary_hovered_color"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingRight: "13px",
+                            paddingLeft: "13px",
+                          }}
+                        >
+                          NEWS
+                        </p>
+                      </div>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="https://www.guidance.edu.bd/wp-content/uploads/2021/06/Hafiza-Sharmeen-2-800x356.jpg"
+                      alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                      <h3 className="primary_hovered_color">Admission Open</h3>
+                      <div className="d-flex flex-row justify-content-center align-items-center">
+                        <p
+                          className="primary_hovered_color"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingRight: "13px",
+                          }}
+                        >
+                          JUNE 28, 2021
+                        </p>
+                        <p
+                          className="primary_hovered_color"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingLeft: "13px",
+                            paddingRight: "13px",
+                          }}
+                        >
+                          BYGUIDANCE INTERNATIONAL SCHOOL
+                        </p>
+                        <p
+                          className="primary_hovered_color"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingRight: "13px",
+                            paddingLeft: "13px",
+                          }}
+                        >
+                          NEWS
+                        </p>
+                      </div>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                </Carousel>
+              </div>
+            </Col>
+            <Col sm={4}>
+              <div className="d-flex flex-row justify-content-center align-items-center">
+                <h3 className="primary_color text-nowrap">Notices</h3>
+                <div
+                  className="w-100"
+                  style={{
+                    backgroundColor: "#ea9970",
+                    height: "5px",
+                    marginLeft: "20px",
+                  }}
+                ></div>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </Container>
       <Container>
         <div>
           <h1>I am from footer.</h1>
@@ -368,11 +592,6 @@ function App() {
       </Container>
 
       <div className="">
-        {/* <div className="d-flex justify-content-end bottom-0 start-0">
-          <button typeName="button" className="support_btn  btn btn-primary">
-            Primary
-          </button>
-        </div> */}
         <nav class="navbar fixed-bottom bg-body-tertiary">
           <div class="container-fluid d-flex justify-content-end">
             <button type="button" class="btn btn-primary">
