@@ -441,17 +441,19 @@ function App() {
 
               <div>
                 <Carousel fade>
-                  <Carousel.Item className="carousel_hover">
+                  <Carousel.Item className="carousel_image">
                     <img
-                      className="d-block w-100"
-                      src="https://www.guidance.edu.bd/wp-content/uploads/2021/06/Belayet-Vai-1-800x356.jpg"
-                      alt="First slide"
+                      src="https://img.freepik.com/free-vector/flat-arabic-pattern-background_79603-1826.jpg?w=1380&t=st=1678979418~exp=1678980018~hmac=6d59b621782f26ccca8ba5ca31ac2d62114eaf2816f778ed51e24a4108da4eeb"
+                      alt="carousel1"
+                      className="carousel_inside_image"
                     />
-                    <Carousel.Caption>
-                      <h3 className="primary_hovered_color">Admission Open</h3>
+                    <Carousel.Caption className="middle">
+                      <h3 className="primary_hovered_color text">
+                        Admission Open
+                      </h3>
                       <div className="d-flex flex-row justify-content-center align-items-center">
                         <p
-                          className="primary_hovered_color"
+                          className="primary_hovered_color text"
                           style={{
                             borderRight: "3px solid #ea9970",
                             paddingRight: "13px",
@@ -460,7 +462,7 @@ function App() {
                           JUNE 28, 2021
                         </p>
                         <p
-                          className="primary_hovered_color"
+                          className="primary_hovered_color text"
                           style={{
                             borderRight: "3px solid #ea9970",
                             paddingLeft: "13px",
@@ -470,7 +472,7 @@ function App() {
                           BYGUIDANCE INTERNATIONAL SCHOOL
                         </p>
                         <p
-                          className="primary_hovered_color"
+                          className="primary_hovered_color text"
                           style={{
                             borderRight: "3px solid #ea9970",
                             paddingRight: "13px",
@@ -482,58 +484,60 @@ function App() {
                       </div>
                     </Carousel.Caption>
                   </Carousel.Item>
-                  <Carousel.Item>
+                  <Carousel.Item className="carousel_image">
                     <img
-                      className="d-block w-100"
-                      src="https://www.guidance.edu.bd/wp-content/uploads/2021/06/Fuad-Hassan-2-800x356.jpg"
-                      alt="Second slide"
-                    />
-
-                    <Carousel.Caption>
-                      <h3 className="primary_hovered_color">Admission Open</h3>
-                      <div className="d-flex flex-row justify-content-center align-items-center">
-                        <p
-                          className="primary_hovered_color"
-                          style={{
-                            borderRight: "3px solid #ea9970",
-                            paddingRight: "13px",
-                          }}
-                        >
-                          JUNE 28, 2021
-                        </p>
-                        <p
-                          className="primary_hovered_color"
-                          style={{
-                            borderRight: "3px solid #ea9970",
-                            paddingLeft: "13px",
-                            paddingRight: "13px",
-                          }}
-                        >
-                          BYGUIDANCE INTERNATIONAL SCHOOL
-                        </p>
-                        <p
-                          className="primary_hovered_color"
-                          style={{
-                            borderRight: "3px solid #ea9970",
-                            paddingRight: "13px",
-                            paddingLeft: "13px",
-                          }}
-                        >
-                          NEWS
-                        </p>
-                      </div>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
                       src="https://www.guidance.edu.bd/wp-content/uploads/2021/06/Hafiza-Sharmeen-2-800x356.jpg"
-                      alt="Third slide"
+                      alt="carousel2"
+                      className="carousel_inside_image"
                     />
-
-                    <Carousel.Caption>
-                      <h3 className="primary_hovered_color">Admission Open</h3>
+                    <Carousel.Caption className="middle">
+                      <h3 className="primary_hovered_color text">
+                        Admission Open
+                      </h3>
                       <div className="d-flex flex-row justify-content-center align-items-center">
+                        <p
+                          className="primary_hovered_color text"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingRight: "13px",
+                          }}
+                        >
+                          JUNE 28, 2021
+                        </p>
+                        <p
+                          className="primary_hovered_color text"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingLeft: "13px",
+                            paddingRight: "13px",
+                          }}
+                        >
+                          BYGUIDANCE INTERNATIONAL SCHOOL
+                        </p>
+                        <p
+                          className="primary_hovered_color text"
+                          style={{
+                            borderRight: "3px solid #ea9970",
+                            paddingRight: "13px",
+                            paddingLeft: "13px",
+                          }}
+                        >
+                          NEWS
+                        </p>
+                      </div>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item className="carousel_image">
+                    <img
+                      src="https://www.guidance.edu.bd/wp-content/uploads/2021/06/Fuad-Hassan-2-800x356.jpg"
+                      alt="carousel3"
+                      className="carousel_inside_image"
+                    />
+                    <Carousel.Caption className="middle">
+                      <h3 className="primary_hovered_color text">
+                        Admission Open
+                      </h3>
+                      <div className="d-flex flex-row justify-content-center align-items-center text">
                         <p
                           className="primary_hovered_color"
                           style={{
@@ -544,7 +548,7 @@ function App() {
                           JUNE 28, 2021
                         </p>
                         <p
-                          className="primary_hovered_color"
+                          className="primary_hovered_color text"
                           style={{
                             borderRight: "3px solid #ea9970",
                             paddingLeft: "13px",
@@ -554,7 +558,7 @@ function App() {
                           BYGUIDANCE INTERNATIONAL SCHOOL
                         </p>
                         <p
-                          className="primary_hovered_color"
+                          className="primary_hovered_color text"
                           style={{
                             borderRight: "3px solid #ea9970",
                             paddingRight: "13px",

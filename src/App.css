@@ -36,16 +36,41 @@
     width: 100%;
     /* height: 80vh; */
 }
-.support_btn{
-    width: 100px;
+/* .carousel1{
+    background-image: url("https://img.freepik.com/free-vector/flat-arabic-pattern-background_79603-1826.jpg?w=1380&t=st=1678979418~exp=1678980018~hmac=6d59b621782f26ccca8ba5ca31ac2d62114eaf2816f778ed51e24a4108da4eeb");
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+} */
+/* .carousel2{
+    background-image: url("https://www.guidance.edu.bd/wp-content/uploads/2021/06/Hafiza-Sharmeen-2-800x356.jpg");
+    width: 100%;
+    height: 300px;
+} */
+.carousel_image{
+    width: 100%;
+    height: 300px;
+    
 }
-.fa-envelope {
-    margin-right: 5px;
-    font-size: 17px;
+.carousel_inside_image{
+    width: 100%;
 }
-.icon_link {
-    font-size: 17px;
+.middle{
+    display: none;
+    transition: .5s ease;
+    /* transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    
+} 
+.carousel_image:hover .middle{
+    display: block;
+    transition: .5s ease;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    border-radius: 5px;
 }
+
 
 
 @media only screen and (max-width: 880px) {
