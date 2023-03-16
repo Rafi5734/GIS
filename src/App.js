@@ -443,7 +443,7 @@ function App() {
                 <Carousel fade>
                   <Carousel.Item className="carousel_image">
                     <img
-                      src="https://img.freepik.com/free-vector/flat-arabic-pattern-background_79603-1826.jpg?w=1380&t=st=1678979418~exp=1678980018~hmac=6d59b621782f26ccca8ba5ca31ac2d62114eaf2816f778ed51e24a4108da4eeb"
+                      src="https://www.guidance.edu.bd/wp-content/uploads/2021/06/Belayet-Vai-1-800x356.jpg"
                       alt="carousel1"
                       className="carousel_inside_image"
                     />
@@ -585,6 +585,40 @@ function App() {
                   }}
                 ></div>
               </div>
+              <div className="d-flex flex-row">
+                <div>
+                  <h3 className="border-3 border-bottom border-warning">
+                    <h1 className="primary_hovered_color">11</h1> MAR
+                  </h3>
+                </div>
+                <div className="ms-4">
+                  <h3>Parent Teacher Meeting 2 – Junior School</h3>
+                </div>
+              </div>
+              <div className="d-flex flex-row mt-5">
+                <div>
+                  <h3 className="border-3 border-bottom border-warning">
+                    <h1 className="primary_hovered_color">21</h1> FEB
+                  </h3>
+                </div>
+                <div className="ms-4">
+                  <h3>International Mother Language Day Observation- 2023</h3>
+                </div>
+              </div>
+              <div className="d-flex flex-row mt-5">
+                <div>
+                  <h3 className="border-3 border-bottom border-warning">
+                    <h1 className="primary_hovered_color">04</h1> MAR
+                  </h3>
+                </div>
+                <div className="ms-4">
+                  <h3>Parent Teacher Meeting 2 – Middle School</h3>
+                </div>
+              </div>
+              <button type="button" className="mt-3 btn btn-primary">
+                View All Notices
+                <i className="fa-solid fa-arrow-right"></i>
+              </button>
             </Col>
           </Row>
         </div>
