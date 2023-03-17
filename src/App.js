@@ -1,5 +1,13 @@
 import "./App.css";
-import { Navbar, Container, Row, Col, Nav, NavDropdown } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Row,
+  Col,
+  Nav,
+  NavDropdown,
+  Button,
+} from "react-bootstrap";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Carousel } from "react-bootstrap";
@@ -425,7 +433,7 @@ function App() {
       <Container className="mt-5">
         <div>
           <Row>
-            <Col sm={8} className="border-end">
+            <Col sm={8} className="border-end mb-5">
               <div className="d-flex flex-row justify-content-center align-items-center">
                 <h3 className="primary_color text-nowrap">News & Updates</h3>
                 <div
@@ -623,6 +631,126 @@ function App() {
           </Row>
         </div>
       </Container>
+      <div className="mt-5" style={{ backgroundColor: "#efefef" }}>
+        <Container>
+          <Row>
+            <Col className="">
+              <img
+                src="https://www.guidance.edu.bd/wp-content/uploads/2020/12/logo-3-300x181-1.png"
+                className="mt-5 mb-5 d-flex align-items-center flex-column"
+                alt="GIS_logo"
+              />
+            </Col>
+            <Col>
+              <div className="d-flex align-items-center flex-column">
+                <h1 className="mt-5">About GIS</h1>
+                <p className="text-muted">
+                  Our education and learning are chiefly befitting to the
+                  ingenious, shared, multidisciplinary, and inquisitive ways
+                  that pupils learn best: our students are equipped for a world
+                  that requires their universal awareness, interest, empathy,
+                  and eagerness to exploit their gifts in service to others.
+                  Students here put together their self-confidence, their
+                  skills, and their sense of identity.
+                </p>
+              </div>
+              <Button className="mb-5" variant="primary">
+                Know more about us
+                <i className="ms-3 fa-solid fa-circle-info"></i>
+              </Button>{" "}
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div>
+        <div>
+          <Row>
+            <Col sm={12} md={6} className="me-0 pe-0">
+              <div>
+                <img
+                  src="https://www.guidance.edu.bd/wp-content/uploads/2021/06/admission.jpg"
+                  alt="admission_image"
+                  className="img-fluid application1"
+                />
+              </div>
+            </Col>
+            <Col sm={12} md={6} className="ms-0 ps-0">
+              <div className="application ps-5 pe-5 d-flex align-items-center">
+                <div>
+                  <h1 className="mt-5 text-white fw-bold">
+                    Apply for Admission
+                  </h1>
+                  <p className="mb-5 primary_hovered_color fs-4 fw-bold">
+                    2023-24 applications are now open
+                  </p>
+                  <p className="mb-5 text-muted fs-4 fw-bold">
+                    We don’t just give students an education and experiences
+                    that set them up for success in a career. We help them
+                    succeed in their career—to discover a field they’re
+                    passionate about and dare to lead it.
+                  </p>
+                  <Button variant="primary" className="mb-5">
+                    Apply Now
+                  </Button>{" "}
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </div>
+      <div>
+        <Container>
+          <div className="d-flex flex-row">
+            <Row>
+              <Col sm={12} md={2}>
+                <div>
+                  <img
+                    src="https://www.guidance.edu.bd/wp-content/uploads/2022/01/DhakaBoard-1.svg"
+                    alt="Dhaka_Board_logo"
+                    className="img-fluid"
+                  />
+                </div>
+              </Col>
+              <Col sm={12} md={2}>
+                <div>
+                  <img
+                    src="https://www.guidance.edu.bd/wp-content/uploads/2022/01/giseiin-2.svg"
+                    alt="Dhaka_Board_logo"
+                    className="img-fluid"
+                  />
+                </div>
+              </Col>
+              <Col sm={12} md={2}>
+                <div>
+                  <img
+                    src="https://www.guidance.edu.bd/wp-content/uploads/2021/10/Cambridge.svg"
+                    alt="Dhaka_Board_logo"
+                    className="img-fluid"
+                  />
+                </div>
+              </Col>
+              <Col sm={12} md={2}>
+                <div>
+                  <img
+                    src="https://www.guidance.edu.bd/wp-content/uploads/2021/10/EDEXCEL.svg"
+                    alt="Dhaka_Board_logo"
+                    className=" img-fluid"
+                  />
+                </div>
+              </Col>
+              <Col sm={12} md={2}>
+                <div>
+                  <img
+                    src="https://www.guidance.edu.bd/wp-content/uploads/2021/10/British-Council.svg"
+                    alt="Dhaka_Board_logo"
+                    className="img-fluid"
+                  />
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Container>
+      </div>
       <Container>
         <div>
           <h1>I am from footer.</h1>
