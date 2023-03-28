@@ -8,6 +8,8 @@ import {
   NavDropdown,
   Button,
 } from "react-bootstrap";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Carousel } from "react-bootstrap";
@@ -697,6 +699,29 @@ function App() {
             </Col>
           </Row>
         </div>
+      </div>
+      <div style={{ backgroundColor: "#efefef" }} className="">
+        <Container style={{ backgroundColor: "#efefef" }} className="pt-5 pb-5">
+          <Tabs
+            defaultActiveKey="home"
+            id="fill-tab-example"
+            className="mb-5"
+            fill
+          >
+            <Tab eventKey="home" title="Home">
+              Tab 1
+            </Tab>
+            <Tab eventKey="profile" title="Profile">
+              Tab 2
+            </Tab>
+            <Tab eventKey="longer-tab" title="Loooonger Tab">
+              Tab 3
+            </Tab>
+            <Tab eventKey="contact" title="Contact">
+              Tab 4
+            </Tab>
+          </Tabs>
+        </Container>
       </div>
       <div>
         <Container>
